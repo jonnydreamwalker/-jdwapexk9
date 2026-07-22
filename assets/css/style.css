@@ -1,0 +1,58 @@
+/* Apex K9 — master styles (modular) */
+:root {
+  --brand-blue-color: #10b981;
+  --brand-white-color: #ffffff;
+  --brand-black: #000000;
+  --brand-zinc-950: #09090b;
+  --brand-emerald-950: #022c22;
+  --brand-emerald-400: #34d399;
+  --brand-emerald-900: #064e3b;
+}
+::selection { background-color: var(--brand-blue-color); color: var(--brand-white-color); }
+::-moz-selection { background-color: var(--brand-blue-color); color: var(--brand-white-color); }
+.shop-product-card-container {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 400px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.shop-product-card-container:hover { transform: translateY(-2px); }
+html { scroll-behavior: smooth; }
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--brand-zinc-950);
+  color: var(--brand-white-color);
+}
+.trust-bar {
+  background-color: #022c22;
+  border-bottom: 1px solid #064e3b;
+  color: #6ee7b7;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1rem;
+}
+@media (min-width: 768px) { .trust-bar { font-size: 12px; } }
+.dropdown-menu {
+  background: rgba(9, 9, 11, 0.30) !important;
+  backdrop-filter: blur(8px) saturate(140%);
+  -webkit-backdrop-filter: blur(8px) saturate(140%);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.55);
+  transform-origin: top center;
+}
+.dropdown-menu:not(.hidden) { animation: frostIn 0.18s ease forwards; }
+@keyframes frostIn {
+  from { opacity: 0; transform: scale(0.94) translateY(-4px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+.dropdown-menu a {
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  border-radius: 0.5rem;
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+.dropdown-menu a:hover {
+  background: rgba(16, 185, 129, 0.18);
+  transform: scale(1.06);
+}
+.logo-placeholder { opacity: 0.3; filter: grayscale(20%); }

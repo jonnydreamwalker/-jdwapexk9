@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jdwapexk9.com/sitemap.xml

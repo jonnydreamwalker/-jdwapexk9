@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Health | Apex K9</title>
+<meta name="theme-color" content="#000000">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/site-config.js"></script>
+<script src="../assets/js/nav-shell.js"></script>
+<script src="../assets/js/apex-bridge.js"></script>
+</head>
+<body class="bg-zinc-950 text-white">
+<div class="trust-bar">Premium K9 gear • Florida warehouse.</div>
+<nav class="bg-black border-b border-emerald-900 sticky top-0 z-50"><div class="max-w-7xl mx-auto px-4 py-4 flex justify-between"><a href="../index.html" class="font-black text-emerald-400">APEX K9</a><a href="#" onclick="openCartModal();return false;" class="relative"><i class="fas fa-shopping-cart"></i><span class="cart-count absolute -top-1 -right-1 bg-emerald-600 text-[10px] px-1 rounded-full">0</span></a></div></nav>
+<header class="h-[30vh] flex items-center justify-center"><div class="text-center"><h1 class="text-4xl font-black">Health</h1><p id="apex-bridge-status" class="text-zinc-500 text-sm mt-3">Connecting…</p></div></header>
+<section class="py-16"><div id="apex-catalog" data-category="Health" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6"></div></section>
+<div id="cart-modal" class="fixed inset-0 bg-black/80 z-[70] hidden flex items-center justify-center p-4"><div class="bg-zinc-900 border border-emerald-900 rounded-2xl max-w-lg w-full p-6"><div class="flex justify-between mb-4"><h3 class="text-emerald-400 font-bold">Cart</h3><button onclick="closeCartModal()">&times;</button></div><div id="cart-items-list"></div><div id="cart-grand-total">$0.00</div></div></div>
+</body></html>
