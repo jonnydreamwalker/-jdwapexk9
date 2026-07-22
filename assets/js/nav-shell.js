@@ -48,15 +48,21 @@
     var d = document.getElementById("category-dropdown");
     var a = document.getElementById("dropdown-arrow");
     if (!d) return;
-    if (d.classList.contains("hidden")) { d.classList.remove("hidden"); if (a) a.innerText = "▲"; }
-    { d.classList.add("hidden"); if (a) a.innerText = "▼"; }
+    if (d.classList.contains("hidden")) {
+      d.classList.remove("hidden");
+      if (a) a.innerText = "▲";
+    } else {
+      d.classList.add("hidden");
+      if (a) a.innerText = "▼";
+    }
   };
   document.addEventListener("click", function (e) {
     var d = document.getElementById("category-dropdown");
     var a = document.getElementById("dropdown-arrow");
     if (!d) return;
     if (!d.contains(e.target) && !e.target.closest("[data-dropdown-toggle]")) {
-      d.classList.add("hidden"); if (a) a.innerText = "▼";
+      d.classList.add("hidden");
+      if (a) a.innerText = "▼";
     }
   });
 
