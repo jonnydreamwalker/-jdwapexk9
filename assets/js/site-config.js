@@ -4,8 +4,8 @@ window.APEX_SITE = {
   tagline: "APEX K9 SUPPLY",
   store: "k9",
   trustBar: "Premium K9 gear • Training tools • Comfort. Florida warehouse. Fast ship FL-TX-CA.",
-  cartKey: "jdw_k9_cart",
-  apiBase: "https://api.jdwapexherp.com",
+  cartKey: "jdw_cart",
+  apiBase: "https://freeport.jdwapexherp.com",
   paypalBusiness: "jonnydreamwalker@gmail.com",
   categories: [
     { href: "services/food.html", label: "Food & Treats", dataCategory: "Food" },
